@@ -1,0 +1,21 @@
+{
+  "name": "umi-test",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zrk",
+  "license": "ISC",
+  "devDependencies": {
+    "@umijs/preset-react": "^1.7.8",
+    "umi": "^3.3.2"
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.9.2",
+    "ant-design-pro": "^2.3.2",
+    "antd": "^3.26.14",
+    "axios": "^0.21.1"
+  }
+}

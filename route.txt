@@ -1,0 +1,45 @@
+// @ts-nocheck
+import React from 'react';
+import { ApplyPluginsType } from 'D:/workspace/works/umi-test/node_modules/@umijs/runtime';
+import * as umiExports from './umiExports';
+import { plugin } from './plugin';
+
+export function getRoutes() {
+  const routes = [
+  {
+    "path": "/",
+    "exact": true,
+    "component": require('@/pages/index.js').default
+  },
+  {
+    "path": "/users",
+    "routes": [
+      {
+        "path": "/users",
+        "exact": true,
+        "component": require('@/pages/users/index.js').default
+      },
+      {
+        "path": "/users/:oid/:setting",
+        "exact": true,
+        "component": require('@/pages/users/[oid$]/[setting$].js').default
+      },
+      {
+        "path": "/users/:id",
+        "exact": true,
+        "component": require('@/pages/users/[id$].js').default
+      }
+    ],
+    "component": require('@/pages/users/_layout.js').default
+  }
+];
+
+  // allow user to extend routes
+  plugin.applyPlugins({
+    key: 'patchRoutes',
+    type: ApplyPluginsType.event,
+    args: { routes },
+  });
+
+  return routes;
+}
