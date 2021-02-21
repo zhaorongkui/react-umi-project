@@ -3,12 +3,12 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from 'D:/workspace/works/umi-test/node_modules/_dva-loading@3.0.22@dva-loading/dist/index.esm.js';
+import createLoading from 'D:/workspace/works/react-umi-project/node_modules/_dva-loading@3.0.22@dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
-import ModelCart0 from 'D:/workspace/works/umi-test/src/models/cart.js';
-import ModelGoods1 from 'D:/workspace/works/umi-test/src/models/goods.js';
-import ModelUser2 from 'D:/workspace/works/umi-test/src/models/user.js';
-import ModelGoodsList3 from 'D:/workspace/works/umi-test/src/pages/goods/models/goodsList.js';
+import ModelCart0 from 'D:/workspace/works/react-umi-project/src/models/cart.js';
+import ModelGoods1 from 'D:/workspace/works/react-umi-project/src/models/goods.js';
+import ModelUser2 from 'D:/workspace/works/react-umi-project/src/models/user.js';
+import ModelGoodsList3 from 'D:/workspace/works/react-umi-project/src/pages/goods/models/goodsList.js';
 
 let app:any = null;
 
@@ -28,7 +28,6 @@ export function _onCreate(options = {}) {
   });
   
   app.use(createLoading());
-  
   (runtimeDva.plugins || []).forEach((plugin:any) => {
     app.use(plugin);
   });

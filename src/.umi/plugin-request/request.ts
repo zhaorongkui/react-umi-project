@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * Base on https://github.com/umijs/D:/workspace/works/umi-test/node_modules/_umi-request@1.3.5@umi-request
+ * Base on https://github.com/umijs/D:/workspace/works/react-umi-project/node_modules/_umi-request@1.3.5@umi-request
  */
 import {
   extend,
@@ -13,7 +13,7 @@ import {
   RequestResponse,
   RequestInterceptor,
   ResponseInterceptor,
-} from 'D:/workspace/works/umi-test/node_modules/_umi-request@1.3.5@umi-request';
+} from 'D:/workspace/works/react-umi-project/node_modules/_umi-request@1.3.5@umi-request';
 // @ts-ignore
 
 import { ApplyPluginsType } from 'umi';
@@ -22,7 +22,7 @@ import { history, plugin } from '../core/umiExports';
 // decoupling with antd UI library, you can using `alias` modify the ui methods
 // @ts-ignore
 import { message, notification } from '@umijs/plugin-request/lib/ui';
-import useUmiRequest, { UseRequestProvider } from 'D:/workspace/works/umi-test/node_modules/_@ahooksjs_use-request@2.8.1@@ahooksjs/use-request';
+import useUmiRequest, { UseRequestProvider } from 'D:/workspace/works/react-umi-project/node_modules/_@ahooksjs_use-request@2.8.3@@ahooksjs/use-request';
 import {
   BaseOptions,
   BasePaginatedOptions,
@@ -38,7 +38,7 @@ import {
   PaginatedOptionsWithFormat,
   PaginatedParams,
   PaginatedResult,
-} from 'D:/workspace/works/umi-test/node_modules/_@ahooksjs_use-request@2.8.1@@ahooksjs/use-request/lib/types';
+} from 'D:/workspace/works/react-umi-project/node_modules/_@ahooksjs_use-request@2.8.3@@ahooksjs/use-request/lib/types';
 
 type ResultWithData<T = any> = { data?: T; [key: string]: any };
 

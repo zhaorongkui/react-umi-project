@@ -6,10 +6,10 @@ import { EffectsCommandMap, SubscriptionAPI } from 'dva';
 import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
-export * from 'D:/workspace/works/umi-test/src/models/cart';
-export * from 'D:/workspace/works/umi-test/src/models/goods';
-export * from 'D:/workspace/works/umi-test/src/models/user';
-export * from 'D:/workspace/works/umi-test/src/pages/goods/models/goodsList';
+export * from 'D:/workspace/works/react-umi-project/src/models/cart';
+export * from 'D:/workspace/works/react-umi-project/src/models/goods';
+export * from 'D:/workspace/works/react-umi-project/src/models/user';
+export * from 'D:/workspace/works/react-umi-project/src/pages/goods/models/goodsList';
 
 export interface Action<T = any> {
   type: T

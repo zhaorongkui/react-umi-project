@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory } from 'D:/workspace/works/umi-test/node_modules/@umijs/runtime';
+import { createBrowserHistory, History } from 'D:/workspace/works/react-umi-project/node_modules/_@umijs_runtime@3.3.7@@umijs/runtime';
 
 let options = {
   "basename": "/"
@@ -9,7 +9,7 @@ if ((<any>window).routerBase) {
 }
 
 // remove initial history because of ssr
-let history: any = process.env.__IS_SERVER ? null : createBrowserHistory(options);
+let history: History = process.env.__IS_SERVER ? null : createBrowserHistory(options);
 export const createHistory = (hotReload = false) => {
   if (!hotReload) {
     history = createBrowserHistory(options);

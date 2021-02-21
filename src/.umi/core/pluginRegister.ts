@@ -1,12 +1,12 @@
 // @ts-nocheck
 import { plugin } from './plugin';
-import * as Plugin_0 from 'D:/workspace/works/umi-test/src/.umi/plugin-dva/runtime.tsx';
+import * as Plugin_0 from 'D:/workspace/works/react-umi-project/src/.umi/plugin-dva/runtime.tsx';
 import * as Plugin_1 from '../plugin-initial-state/runtime';
 import * as Plugin_2 from '../plugin-model/runtime';
 
   plugin.register({
     apply: Plugin_0,
-    path: 'D:/workspace/works/umi-test/src/.umi/plugin-dva/runtime.tsx',
+    path: 'D:/workspace/works/react-umi-project/src/.umi/plugin-dva/runtime.tsx',
   });
   plugin.register({
     apply: Plugin_1,
